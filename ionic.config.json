@@ -1,0 +1,7 @@
+{
+  "name": "ConferenceIndia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
