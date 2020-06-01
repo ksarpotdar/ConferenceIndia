@@ -1,0 +1,115 @@
+.audio_bgimg {
+    //background-image: url('../assets/imgs/bg_doctor_color.png');
+    background-color: #fff !important;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  #container {
+    position: relative;
+    margin-left: -100px !important;
+    margin-top: 10px;
+  }
+  
+  #img2 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+  }
+  
+  .img1 {
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  
+  .doctor {
+    text-align: center;
+    margin-left: 50px;
+    font-size: 16px !important;
+    color: blue !important;
+  }
+  .accept_img {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    float: right;
+    right: 0;
+    margin-right: 50px;
+  
+    //margin-right: -30px;
+  }
+  
+  .end_img {
+    height: 50px;
+    width: 50px;
+    margin-left: -60px;
+    //margin-left: 38px;
+  }
+  
+  .receive_img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-left: 50px !important;
+    margin-right: 20px !important;
+    margin-left: 38px;
+  }
+  .call_div {
+    margin-top: 60px;
+    width: 100% !important;
+    text-align: center;
+  }
+  
+  .call_now {
+    width: 90px !important;
+    color: #fff !important;
+    height: 40px !important;
+    margin-top: 40px !important;
+    background-color: #2ec95c !important;
+    border-radius: 5px !important;
+    margin-left: 10px !important;
+    float: right;
+    right: 0;
+    margin-right: 50px;
+  }
+  
+  .back_now {
+    width: 90px !important;
+    color: #fff !important;
+    height: 40px !important;
+    margin-top: 40px !important;
+    background-color: #e93a3a !important;
+    border-radius: 5px !important;
+    margin-right: 10px !important;
+  }
+  
+  .end_now {
+    width: 90px !important;
+    color: #fff !important;
+    height: 40px !important;
+    position: fixed;
+    border-radius: 5px !important;
+    margin-top: 40px !important;
+    background-color: #e93a3a !important;
+    margin-left: -20px !important;
+  }
+  #mini {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .hangup-btn {
+    border: 1px solid red;
+  }
+  
+  .hangup-btn-row {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  

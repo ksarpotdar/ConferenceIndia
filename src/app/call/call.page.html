@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Conference India</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding no-bounce>
+  <div>
+    <div id="remote" style="width: 100%;"></div>
+    <div id="mini"></div>
+  </div>
+  <ion-list *ngIf="!remoteStreamAddedHandlerFlag">
+    <ion-item>
+      <ion-input
+        type="text"
+        value=""
+        placeholder="Enter destination ID"
+        [(ngModel)]="distantNumber"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button
+        (click)="pushCall($event)"
+        [ngStyle]="{ 'background-color': buttonColor }"
+        expand="full"
+        >{{ buttonLabel }}</ion-button
+      >
+    </ion-item>
+  </ion-list>
+  <div *ngIf="!remoteStreamAddedHandlerFlag" style="text-align: center;">
+    {{ infoLabel }}
+  </div>
+  <ion-row *ngIf="remoteStreamAddedHandlerFlag" class="hangup-btn-row">
+    <ion-col>
+      <ion-button
+        class="hangup-btn"
+        expand="full"
+        fill="outline"
+        (click)="pushCall($event)"
+        color="danger"
+        >Hangup</ion-button
+      >
+    </ion-col>
+  </ion-row>
+</ion-content>

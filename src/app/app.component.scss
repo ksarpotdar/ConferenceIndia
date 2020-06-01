@@ -117,3 +117,18 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+ion-item {
+  cursor: pointer;
+}
+.profile-item {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+}
+.main-list {
+  height: 100%;
+}
+
+.web {
+  max-width: 20%;
+}

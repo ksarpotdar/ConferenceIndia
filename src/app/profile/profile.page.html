@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col class="profile-col-fake-icon">
+      <ion-icon (click)="openImagePickerCrop()" style="zoom: 10;" name="person-circle-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf="showInput">
+    <ion-col class="profile-col-inputs">
+      <div class="div-container">
+        <ion-item>
+          <ion-label position="floating">Display Name</ion-label>
+          <ion-input [(ngModel)]="displayName"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-button
+            class="enable-conference-btn"
+            expand="full"
+            (click)="setUserName()"
+            color="primary"
+            >Set Display Name</ion-button
+          >
+        </ion-item>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf="!showInput">
+    <ion-col class="profile-col-body">
+      Welcome {{ global.user.displayName }} !
+    </ion-col>
+  </ion-row>
+</ion-content>
